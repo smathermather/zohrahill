@@ -91,7 +91,7 @@
 
 <script>
 Q3D.Config.allVisible = true;
-Q3D.Config.localMode = true;
+
 if (typeof proj4 === "undefined") document.getElementById("lib_proj4js").style.display = "none";
 
 var app = Q3D.application,
@@ -100,7 +100,7 @@ var app = Q3D.application,
 app.init(container);           // initialize application
 
 // load the scene
-app.loadSceneFile("./data/index/scene.js", function () {
+app.loadSceneFile("./data/index/scene.json", function () {
   app.start();
 
   // North arrow inset
